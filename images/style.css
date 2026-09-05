@@ -270,19 +270,12 @@ a {
 
 
 .profile-image {
-
-    width: 100%;
-
-    display: block;
-
-    border-radius: 18px;
-
-    position: relative;
-
-    z-index: 2;
-
-    box-shadow: 0 18px 35px rgba(50, 65, 55, .13);
-
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 
