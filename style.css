@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  padding: 70px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.hello {
+  color: #0284c7;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.15;
+  margin: 10px 0;
+}
+
+.hero h1 span {
+  color: #0284c7;
+}
+
+.hero h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.hero-text > p:not(.hello) {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0284c7;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0369a1;
+  transform: translateY(-2px);
+}
+
+/* Profile image */
+.profile-box {
+  width: 300px;
+  min-width: 300px;
+}
+
+.profile-box img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border: 6px solid white;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.section.light {
+  background: #f8fafc;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 35px;
+  color: #0f172a;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0284c7;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* About */
+.about-card {
+  max-width: 850px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.about-card h3 {
+  color: #0284c7;
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 30px;
+}
+
+/* Skills */
+.cards,
+.projects {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card,
+.project {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover,
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card h3,
+.project h3 {
+  color: #0284c7;
+  margin-bottom: 8px;
+}
+
+/* Contact */
+.contact-card {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.contact-card p {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .profile-box {
+    width: 240px;
+    min-width: 240px;
+  }
+
+  .info,
+  .cards,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card,
+  .contact-card {
+    text-align: left;
+  }
+}
