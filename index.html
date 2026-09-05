@@ -1,152 +1,505 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | ชื่อของฉัน</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="navbar">
-    <a class="brand" href="#home">Portfolio<span>.</span></a>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        My Portfolio<span>.</span>
+    </a>
+
     <nav>
-      <a href="#about">เกี่ยวกับฉัน</a>
-      <a href="#skills">ทักษะ</a>
-      <a href="#projects">ผลงาน</a>
-      <a href="#contact">ติดต่อ</a>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#projects">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
     </nav>
-  </header>
 
-  <main>
-    <!-- Hero -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-        <h1>สวัสดีครับ<br><span>ผมชื่อ ชื่อของฉัน</span></h1>
-        <p class="intro">
-          นักเรียนที่สนใจด้านเทคโนโลยี การเขียนโปรแกรม
-          และการออกแบบเว็บไซต์ที่เรียบง่ายและใช้งานได้จริง
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            สวัสดีครับ ผมชื่อ
         </p>
-        <a class="button" href="#about">รู้จักผมมากขึ้น ↓</a>
-      </div>
 
-      <div class="photo-wrap">
-        <img src="603-04.jpg" alt="รูปโปรไฟล์ของฉัน">
-      </div>
-    </section>
+        <h1>
+            ชื่อ-นามสกุล
+        </h1>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">ABOUT ME</p>
-        <h2>เกี่ยวกับฉัน</h2>
-      </div>
+        <h2>
+            นักเรียน | นักพัฒนาเว็บไซต์
+        </h2>
 
-      <div class="about-grid">
-        <div>
-          <p>
-            สวัสดีครับ ผมชื่อ <strong>ชื่อ-นามสกุล</strong>
-            กำลังศึกษาอยู่ที่ <strong>ชื่อโรงเรียน</strong>
-            ผมชอบเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะเรื่องคอมพิวเตอร์
-            การสร้างเว็บไซต์ และการเขียนโปรแกรม
-          </p>
-          <p>
-            เป้าหมายของผมคือพัฒนาทักษะของตัวเองอย่างต่อเนื่อง
-            และนำความรู้ไปสร้างผลงานที่มีประโยชน์
-          </p>
+        <p class="description">
+            ผมเป็นนักเรียนที่สนใจด้านการเขียนโปรแกรม
+            และการพัฒนาเว็บไซต์ ชอบเรียนรู้สิ่งใหม่ ๆ
+            และพัฒนาตัวเองอยู่เสมอ
+        </p>
+
+        <a href="#projects" class="main-button">
+            ดูผลงานของฉัน
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <!-- รูปโปรไฟล์ -->
+
+    <div class="profile-area">
+
+        <div class="profile-decoration"></div>
+
+        <img
+            src="603-04.jpg"
+            alt="รูปโปรไฟล์"
+            class="profile-image"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+
+        <p>เกี่ยวกับฉัน</p>
+
+        <h2>
+            ประวัติส่วนตัว
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <div class="personal-info">
+
+            <div class="info-row">
+                <span>👤</span>
+
+                <div>
+                    <small>ชื่อ</small>
+                    <p>ชื่อ-นามสกุล</p>
+                </div>
+            </div>
+
+
+            <div class="info-row">
+                <span>🎂</span>
+
+                <div>
+                    <small>อายุ</small>
+                    <p>XX ปี</p>
+                </div>
+            </div>
+
+
+            <div class="info-row">
+                <span>🎓</span>
+
+                <div>
+                    <small>การศึกษา</small>
+                    <p>กำลังศึกษาที่ โรงเรียนของคุณ</p>
+                </div>
+            </div>
+
+
+            <div class="info-row">
+                <span>✉️</span>
+
+                <div>
+                    <small>อีเมล</small>
+                    <p>your.email@example.com</p>
+                </div>
+            </div>
+
+
+            <div class="info-row">
+                <span>📱</span>
+
+                <div>
+                    <small>เบอร์โทร</small>
+                    <p>08X-XXX-XXXX</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="info-card">
-          <div><span>ชื่อเล่น</span><strong>ชื่อเล่น</strong></div>
-          <div><span>อายุ</span><strong>XX ปี</strong></div>
-          <div><span>ระดับชั้น</span><strong>ระดับชั้น / สาขา</strong></div>
-          <div><span>งานอดิเรก</span><strong>ฟังเพลง / เล่นเกม</strong></div>
+
+        <div class="about-text">
+
+            <h3>
+                สวัสดีครับ 👋
+            </h3>
+
+            <p>
+                ผมเป็นนักเรียนที่มีความสนใจในด้านเทคโนโลยี
+                โดยเฉพาะการพัฒนาเว็บไซต์และการเขียนโปรแกรม
+            </p>
+
+            <p>
+                ผมชอบเรียนรู้สิ่งใหม่ ๆ และนำความรู้ที่ได้
+                มาสร้างผลงานของตัวเอง เพื่อพัฒนาทักษะ
+                และเตรียมตัวสำหรับอนาคต
+            </p>
+
+            <p>
+                เป้าหมายของผมคือการพัฒนาตัวเองอย่างต่อเนื่อง
+                และสร้างผลงานที่สามารถนำไปใช้ได้จริง
+            </p>
+
         </div>
-      </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section soft">
-      <div class="section-heading">
-        <p class="eyebrow">MY SKILLS</p>
-        <h2>ทักษะ</h2>
-      </div>
+    </div>
 
-      <div class="skill-list">
-        <article class="skill">
-          <span>01</span>
-          <div>
-            <h3>HTML</h3>
-            <p>สร้างโครงสร้างและเนื้อหาของเว็บไซต์</p>
-          </div>
-        </article>
+</section>
 
-        <article class="skill">
-          <span>02</span>
-          <div>
-            <h3>CSS</h3>
-            <p>ออกแบบหน้าเว็บให้สวยงาม สบายตา และรองรับมือถือ</p>
-          </div>
-        </article>
 
-        <article class="skill">
-          <span>03</span>
-          <div>
-            <h3>JavaScript</h3>
-            <p>กำลังศึกษาเพื่อเพิ่มความสามารถในการโต้ตอบของเว็บไซต์</p>
-          </div>
-        </article>
-      </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">MY PROJECTS</p>
-        <h2>ผลงาน</h2>
-      </div>
+<!-- =========================
+     SKILLS
+========================= -->
 
-      <div class="project-grid">
-        <article class="project">
-          <p class="project-number">01</p>
-          <h3>เว็บไซต์ Portfolio</h3>
-          <p>เว็บไซต์แนะนำตัวที่สร้างด้วย HTML และ CSS</p>
-        </article>
+<section id="skills" class="section light-section">
 
-        <article class="project">
-          <p class="project-number">02</p>
-          <h3>เว็บไซต์โรงเรียน</h3>
-          <p>โปรเจกต์เว็บไซต์สำหรับนำเสนอข้อมูลหรือกิจกรรมของโรงเรียน</p>
-        </article>
+    <div class="section-title">
 
-        <article class="project">
-          <p class="project-number">03</p>
-          <h3>โปรเจกต์อื่น ๆ</h3>
-          <p>พื้นที่สำหรับใส่ผลงาน โปรแกรม หรือกิจกรรมที่เคยทำ</p>
-        </article>
-      </div>
-    </section>
+        <p>ทักษะของฉัน</p>
 
-    <!-- Contact -->
-    <section id="contact" class="contact section soft">
-      <div class="section-heading">
-        <p class="eyebrow">CONTACT</p>
-        <h2>ติดต่อฉัน</h2>
-      </div>
+        <h2>
+            Skills
+        </h2>
 
-      <p class="contact-text">หากต้องการติดต่อ สามารถติดต่อผมได้ที่</p>
+        <div class="title-line"></div>
 
-      <div class="contact-links">
-        <a href="mailto:example@email.com">example@email.com</a>
-        <a href="#">GitHub</a>
-        <a href="#">Facebook</a>
-      </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p>© 2026 ชื่อของฉัน · My Portfolio</p>
-  </footer>
+
+    <div class="skills">
+
+        <!-- HTML -->
+
+        <div class="skill-card">
+
+            <div class="skill-top">
+
+                <div class="skill-icon html">
+                    5
+                </div>
+
+                <div>
+                    <h3>HTML</h3>
+                    <p>90%</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div style="width:90%"></div>
+            </div>
+
+        </div>
+
+
+        <!-- CSS -->
+
+        <div class="skill-card">
+
+            <div class="skill-top">
+
+                <div class="skill-icon css">
+                    #
+                </div>
+
+                <div>
+                    <h3>CSS</h3>
+                    <p>85%</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div style="width:85%"></div>
+            </div>
+
+        </div>
+
+
+        <!-- JavaScript -->
+
+        <div class="skill-card">
+
+            <div class="skill-top">
+
+                <div class="skill-icon js">
+                    JS
+                </div>
+
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>70%</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Responsive -->
+
+        <div class="skill-card">
+
+            <div class="skill-top">
+
+                <div class="skill-icon responsive">
+                    ◫
+                </div>
+
+                <div>
+                    <h3>Responsive Design</h3>
+                    <p>80%</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section">
+
+    <div class="section-title">
+
+        <p>ผลงานของฉัน</p>
+
+        <h2>
+            Projects
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="projects">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-image project-one">
+                To-Do List
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+                    To-Do List
+                </h3>
+
+                <p>
+                    เว็บแอปสำหรับจัดการรายการสิ่งที่ต้องทำ
+                </p>
+
+                <a href="#">
+                    ดูรายละเอียด →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-image project-two">
+                Weather App
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+                    Weather App
+                </h3>
+
+                <p>
+                    เว็บแอปแสดงข้อมูลสภาพอากาศ
+                </p>
+
+                <a href="#">
+                    ดูรายละเอียด →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-image project-three">
+                My Portfolio
+            </div>
+
+            <div class="project-content">
+
+                <h3>
+                    My Portfolio
+                </h3>
+
+                <p>
+                    เว็บไซต์ Portfolio ส่วนตัว
+                </p>
+
+                <a href="#">
+                    ดูรายละเอียด →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="section light-section contact">
+
+    <div class="section-title">
+
+        <p>ติดต่อฉัน</p>
+
+        <h2>
+            Contact
+        </h2>
+
+        <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="contact-list">
+
+        <a href="mailto:your.email@example.com">
+            ✉️
+            <span>
+                your.email@example.com
+            </span>
+        </a>
+
+
+        <a href="#">
+            📱
+            <span>
+                08X-XXX-XXXX
+            </span>
+        </a>
+
+
+        <a href="#">
+            Facebook
+        </a>
+
+
+        <a href="#">
+            GitHub
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 ชื่อ-นามสกุล
+        | All Rights Reserved.
+    </p>
+
+    <a href="#home">
+        ↑
+    </a>
+
+</footer>
+
+
 </body>
 </html>
